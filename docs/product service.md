@@ -1,4 +1,4 @@
-1. Application.java -> @EnableEurekaClient annotation
+1. Application.java -> @EnableDiscoveryClient annotation
 2. pom.xml -> Add eureka-client dependency
 3. application.properties -> Configure eureka server properties
     - server.port=8082
