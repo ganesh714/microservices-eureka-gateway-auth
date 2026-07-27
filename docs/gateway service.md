@@ -9,3 +9,4 @@ application.properties -> Configure eureka server properties
                         .routes: -id: product-service,uri:lb://product-service,predicates: -path=/products/**
                         ..
                         
+                        
