@@ -10,11 +10,15 @@ spring:
           uri: lb://product-service
           predicates:
             - Path=/products/**
+          filters:
+            - AuthenticationFilter
 
         - id: wishlist-service
           uri: lb://wishlist-service
           predicates:
             - Path=/wishlist/**
+          filters:
+            - AuthenticationFilter
 
         - id: auth-service
           uri: lb://auth-service
