@@ -10,6 +10,7 @@ Security Config:
         declare non secure endpoints like /login, /register ...
     
     to declare beans like
+    AuthenticationProvider
     AuthenticationManager
     PasswordEncoder
     RoleHierarchy
@@ -72,3 +73,8 @@ Before COntroller Toched:
 (This tells Spring Security: "Stop checking! This user is authenticated as 'ganesh' with ROLE_ADMIN for this request!")
 filterChain.doFilter(request, response) - continue with other filters and go to controllers or net steps
 
+------
+
+for miroservices
+ there is a spetial end point required sometimes that is 
+ "/validate" endpoint(which will use bygateway or other microservices) :  check whether the token got expired or not

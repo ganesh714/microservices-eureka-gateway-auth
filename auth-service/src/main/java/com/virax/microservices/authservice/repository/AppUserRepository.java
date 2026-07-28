@@ -7,6 +7,6 @@ import com.virax.microservices.authservice.model.AppUser;
 
 @Repository
 public interface AppUserRepository extends JpaRepository<AppUser, Long> {
-	
-	public AppUser findByUserName(String userName);
+
+	public AppUser findByUsername(String userName);
 }

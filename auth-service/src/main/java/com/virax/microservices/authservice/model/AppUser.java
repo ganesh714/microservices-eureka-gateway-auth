@@ -14,14 +14,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AppUser {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
 	@Column(unique = true, nullable = false)
-	private String userName;
+	private String username;
 	@Column(nullable = false)
 	private String password;
-	
+
 }
